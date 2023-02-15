@@ -201,7 +201,7 @@ class VideoRoomPublisherJanusPlugin extends JanusPlugin {
 
       this.janusRoomId = data.room
 
-      return this.join()
+      return param;
     }).catch((err) => {
       this.logger.error('VideoRoomPublisherJanusPlugin, cannot create room', err)
       throw err
